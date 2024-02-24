@@ -41,24 +41,25 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
     justify-content: space-between;
 }
 
-.header_logo-image {
-    height: 15px;
-    width: 78px;
+.header__logo-image {
+    height: 16px;
+    width: 79px;
 }
 
-.header_menu-list {
+.header__menu-list {
     display: flex;
     flex-direction: column;
     gap: 12px;
     list-style: none;
 }
 
-.header_menu-item_active {
+.header__menu-item_active {
     text-decoration: none;
 }
 
 .header__menu-link {
     color: #F5F5F5;
+    text-underline-offset: 3px;
 }
 
 .cover {
@@ -66,69 +67,69 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
     background-size: 95% auto;
     background-repeat: no-repeat;
     background-position: 20px 30px;
-    padding: 7px 20px 7px;
+    padding: 7px 24px 7px 20px;
 }
 
-.cover_title {
+.cover__title {
     font-size: 72px;
     font-family: "EB Garamond", serif;
     font-weight: normal;
     line-height: 1;
+
 }
 
 .intro {
+    display: flex;
+    flex-direction: column;
     gap: 24px;
     padding: 30px 20px 38px;
 }
 
-.intro_heading {
+.intro__heading {
     display: flex;
-    width: 320px;
     justify-content: space-between;
     align-items: flex-start;
 }
 
-.intro_title {
+.intro__title {
     font-size: 16px;
     color: #CCCCCC;
     line-height: 120%;
+    font-weight: normal;
 }
 
-.intro_date {
+.intro__date {
     color: #CCCCCC;
     line-height: 120%;
     white-space: nowrap;
 }
 
-.intro_main-text {
+.intro__main-text {
     color: #F5F5F5;
+    font-size: 16px;
     line-height: 135%;
-    padding: 24px 0 0;
-}
-
-.padding {
-    padding: 24px 0 0;
 }
 
 .reasons {
     padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
-.content-section_subtitle {
+.content-section__subtitle {
     font-size: 28px;
     font-weight: 500;
     line-height: 115%;
     font-family: "EB Garamond", serif;
-    padding-bottom: 32px;
 }
 
-.content-section_introduction {
+.content-section__introduction {
     font-size: 20px;
     line-height: 135%;
-    padding-bottom: 32px;
 }
 
-.content-section_list {
+.content-section__list {
     padding-left: 16px;
     display: flex;
     flex-direction: column;
@@ -136,26 +137,28 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
     gap: 16px;
 }
 
-.content-section_list-item {
+.content-section__list-item {
     line-height: 135%;
 }
 
-.content-section_list-accent {
+.content-section__list-accent {
     font-weight: bold;
     line-height: 135%;
 }
 
 .how-to {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
     padding: 40px 20px 0;
 }
 
-.card-list {
+.cards-list {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 32px;
     list-style-type: none;
-    padding-bottom: 60px;
 }
 
 .card {
@@ -175,7 +178,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
     color: #131313;
 }
 
-.card_author {
+.card__author {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -183,32 +186,33 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
     padding: 20px 0 0 20px;
 }
 
-.card_author-photo {
+.card__author-photo {
     height: 100px;
     width: 100px;
     border-radius: 50%;
 }
 
-.card_author-name {
+.card__author-name {
     color: #F5F5F5;
     font-weight: bold;
     line-height: 135%;
     display: block;
 }
 
-.card_content {
+.card__content {
     padding: 0 20px;
     gap: 8px;
 }
 
-.card_title {
+.card__title {
     font-family: "EB Garamond", serif;
     font-size: 22px;
     font-weight: 500;
     line-height: 135%;
 }
 
-.card_text {
+.card__text {
+    width: 279px;
     padding: 8px 0 20px 0;
     line-height: 135%;
 }
@@ -218,6 +222,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
 }
 
 .footer {
+    margin-top: 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -240,7 +245,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
     font-size: 14px;
 }
 
-.footer__link {
+.footer__links-link {
     color: #F5F5F5;
     text-decoration: none;
 }
